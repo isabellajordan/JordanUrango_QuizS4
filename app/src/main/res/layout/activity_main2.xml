@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#62c0e2"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/tv_hola"
+        android:layout_width="268dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Hola ADMINISTRADOR"
+        app:layout_constraintBottom_toTopOf="@+id/tv_mensaje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_mensaje"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="160dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:text="Este perfil se encuentra bajo construcción. Próximamente disfruta el mejor contenido en esta Activity."
+        app:layout_constraintBottom_toTopOf="@+id/btn_cerrarsesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hola" />
+
+    <Button
+        android:id="@+id/btn_cerrarsesion"
+        android:layout_width="206dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="67dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginStart="71dp"
+        android:background="#2791b1"
+        android:text="CERRAR SESIÓN"
+        android:textColor="#ffff
+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mensaje" />
+</android.support.constraint.ConstraintLayout>
